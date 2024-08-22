@@ -1,0 +1,133 @@
+/* Product.css */
+.product-container {
+    padding: 3rem 0;
+  }
+  
+  .product-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .product-item {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-item__img {
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .product-item__img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-item__img:hover img {
+    transform: scale(1.1);
+  }
+  
+  .product-item__action {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    gap: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .product-item__img:hover .product-item__action {
+    opacity: 1;
+  }
+  
+  .product-item__action .btn {
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .product-item__action .btn:hover {
+    background-color: #ffc107;
+  }
+  
+  .product-item__info {
+    padding: 1rem 0.5rem;
+  }
+  
+  .product-item__title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-item__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  .product-item__price h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-right: 0.5rem;
+  }
+  
+  .product-item__price h6 {
+    font-size: 1rem;
+    color: #868e96;
+    text-decoration: line-through;
+  }
+  
+  .product-item__rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .product-item__rating small {
+    font-size: 0.875rem;
+    color: #6c757d;
+  }
+  
+  @media (max-width: 992px) {
+    .col-lg-3 {
+      flex: 0 0 33.3333%;
+      max-width: 33.3333%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .col-sm-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  

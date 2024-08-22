@@ -1,0 +1,182 @@
+/* Container for the entire Admin Panel */
+.container-fluid {
+    background-color: #000000;
+    padding: 1rem; /* Add padding for smaller screens */
+    color: #ffffff; /* Ensure text contrasts against the black background */
+}
+
+/* Heading styles */
+h2 {
+    font-size: 2rem;
+    color: #ffc400;
+    margin-bottom: 1rem;
+    text-align: center; /* Center the heading */
+}
+
+/* Product form styles */
+.product-form {
+    background: #1a1a1a; /* Darker background for the form */
+    border: 1px solid #444; /* Adjust border to match the dark theme */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 2rem;
+    color: #ffffff; /* Ensure text is readable on dark background */
+}
+
+.product-form h3 {
+    font-size: 1.5rem;
+    color: #ffc400; /* Consistent color scheme */
+    margin-bottom: 1rem;
+}
+
+.product-form input,
+.product-form textarea {
+    width: 100%;
+    padding: 0.75rem; /* Increase padding for better user experience */
+    margin-bottom: 1rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333333; /* Dark background for input fields */
+    color: #ffffff;
+}
+
+.product-form input:focus,
+.product-form textarea:focus {
+    border-color: #ffc400; /* Highlight the input fields on focus */
+    outline: none;
+}
+
+.product-form button {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #444; /* Match border style with inputs */
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.product-form button:hover {
+    background-color: #fcba06;
+    color: black;
+}
+
+/* Product list styles */
+.product-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li {
+    background: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.product-list img {
+    border-radius: 5px;
+    max-width: 150px;
+    height: auto;
+}
+
+.product-list h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #ffc400;
+}
+
+.product-list p {
+    margin: 0.5rem 0;
+}
+
+.product-list .price {
+    font-size: 1.25rem;
+    color: #00a2ff;
+    font-weight: bold;
+}
+
+/* Order management styles */
+.order-management {
+    background: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.order-management select {
+    padding: 0.5rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.order-management button {
+    background-color: #000000;
+    color: white;
+    border: 1px solid #444;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.order-management button:hover {
+    background-color: #fcba06;
+    color: black;
+}
+
+/* Profit summary styles */
+.profit-summary {
+    background: #1a1a1a;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 3rem; /* Increased margin from the top */
+    color: #ffffff;
+}
+
+.profit-summary h2 {
+    font-size: 1.5rem;
+    color: #ffc400;
+    margin-bottom: 1rem;
+}
+
+.profit-summary p {
+    margin: 0.5rem 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .product-form input,
+    .product-form textarea,
+    .product-form button {
+        width: 100%;
+        font-size: 0.875rem;
+    }
+
+    .product-list li,
+    .order-management {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-list img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+}

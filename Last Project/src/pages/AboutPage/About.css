@@ -1,0 +1,98 @@
+.about-container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-heading {
+    text-align: center;
+    color: #333;
+    text-decoration: underline goldenrod;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+  
+  .about-section {
+    margin-bottom: 40px;
+  }
+  
+  .section-heading {
+    text-decoration: underline goldenrod;
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .section-description {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .values-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .values-list li {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 20px;
+    text-align: center;
+  }
+  
+  .team-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between team members */
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  .team-member {
+    display: flex;
+    flex-direction: column; /* Stack image and info vertically */
+    align-items: center; /* Center horizontally */
+    width: 300px; /* Increase the width for a larger box */
+    text-align: center; /* Center align text */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .team-photo {
+    width: 180px; /* Increase the width of the image */
+    height: 190px; /* Increase the height of the image */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #ffc400; /* Optional border around the photo */
+  }
+  
+  .team-info {
+    margin-top: 10px;
+  }
+  
+  .team-name {
+    font-size: 20px;
+    color: #e9b200;
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+  
+  .team-role {
+    font-size: 16px;
+    color: #777;
+  }
+  
